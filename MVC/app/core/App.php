@@ -4,6 +4,7 @@ class App {
 
     private $controller = 'home';  // Default controller
     private $method = 'index';  // Default method
+    // functions inside class are called methods
     // Method to split the URL
     private function splitURL() {
         $URL = $_GET['url'] ?? 'home';  // Default to 'home' if 'url' is not set
