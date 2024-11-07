@@ -1,5 +1,6 @@
 <?php 
 
+// Traits can include methods that can be used in any class that uses the trait.
 Trait Database{
     private function connect(){
         $string = "mysql:host=".DBHOST.";dbname=".DBNAME;
