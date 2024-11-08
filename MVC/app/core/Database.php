@@ -1,12 +1,12 @@
 <?php 
 
-// Traits can include methods that can be used in any class that uses the trait.
 Trait Database{
     private function connect(){
         $string = "mysql:host=".DBHOST.";dbname=".DBNAME;
         $con=new PDO($string, DBUSER,DBPASS);
         return $con;
     }
+
     public function query($query, $data= [] )
     {
             $con= $this->connect();
@@ -14,7 +14,7 @@ Trait Database{
             $check=$stmt->execute($data);
             if($check)
             {
-                $result= $stmt->fetchAll(PDO::FETCH_OBJ);
+                $result= $stmt->fetchAll(PDO::FETCH_ASSOC);
             if(is_array($result) && count($result))
         { 
             return $result;
@@ -37,6 +37,8 @@ public function get_row($query, $data= [] )
         }        
 } return false;
 }
+
+
     // Generate the model file after creating the table
     
 }

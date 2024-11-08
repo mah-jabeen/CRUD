@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>CRUD</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="<?ROOT?>/assets/css/style.css"> 
 </head>
 <body>
     <div id="wrapper">
@@ -15,16 +15,16 @@
         <div id="menu">
             <ul>
                 <li>
-                    <a href="index.php">Home</a>
+                    <a href="index.view.php">Home</a>
                 </li>
                 <li>
-                    <a href="add.php">Add</a>
+                    <a href="add.view.php">Add</a>
                 </li>
                 <li>
-                    <a href="update.php">Update</a>
+                    <a href="update.view.php">Update</a>
                 </li>
                 <li>
-                    <a href="delete.php">Delete</a>
+                    <a href="delete.view.php">Delete</a>
                 </li>
             </ul>
         </div>
